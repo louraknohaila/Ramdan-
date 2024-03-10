@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=*, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ body {
+            background-color: #f3da97; /* Beige clair */
+            background-image: url('images/b1.jpeg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .faq {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq .title {
+            padding-bottom: 20px;
+            font-size: 2.5rem;
+            color: #d5b095; /* Marron */
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+        .faq .box {
+            background-color: #d3c28f91; /* Blanc */
+            border-radius: .5rem;
+            border: 1px solid #d2b48c; /* Brun doré */
+            margin-top: 20px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .faq .box h3 {
+            background-color: #d2b48c; /* Brun doré */
+            color: #fff; /* Blanc */
+            padding: 20px;
+            font-size: 2rem;
+            border-radius: .5rem;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .faq .box p {
+            padding: 20px;
+            line-height: 2;
+            font-size: 1.6rem;
+            color: #8b4513; /* Marron */
+            display: none;
+            margin: 0;
+        }
+
+        .faq .box.active p {
+            display: block;
+        }
+.contact .row form .box::placeholder{
+   color: rgba(220, 198, 156, .6);
+}
+
+.contact .row form textarea{
+   height: 15rem;
+   resize: none;
+}
+
+.contact .row .faq .title{
+   padding-bottom: .5rem;
+   font-size: 2.5rem;
+   color: var(--sub-color);
+   text-transform: capitalize;
+   text-align: center;
+}
+.change{
+   text-align: center;
+}
+.contact .row .faq .box{
+   border-radius: .5rem;
+   border: var(--border);
+   margin-top: 2rem;
+}
+
+.contact .row .faq .box h3{
+   background-color: var(--sub-color);
+   color: var(--main-color);
+   padding: 1.5rem;
+   font-size: 2rem;
+   border-radius: .5rem;
+   cursor: pointer;
+}
+
+.contact .row .faq .box p{
+   padding:1.5rem 2rem;
+   line-height: 2;
+   font-size: 1.6rem;
+   color: var(--sub-color);
+   display: none;
+}
+
+ .row .faq .box.active p{
+   display: inline-block;
+}
+</style>
+<body>
+    <section class="contact" id="contact">
+
+        <div class="row">
+    <div class="faq">
+        <h3 class="title">Questions Fréquemment Posées</h3>
+        <div class="box active">
+           <h3 onclick="toggleBox(1)">Pourquoi les musulmans jeûnent-ils ??</h3>
+           <p class="num1">Le jeûne est perçu comme une purification physique et spirituelle. Les musulmans font souvent des dons à des organisations caritatives pendant le ramadan. Plusieurs passent plus de temps à la mosquée ou profitent de leurs temps libres pour réciter le Coran.</p>
+        </div>
+        <div class="box">
+           <h3 onclick="toggleBox(2)">Comment les musulmans jeûnent-ils ?</h3>
+           <p class="num2">Les musulmans doivent s'abstenir de manger, de boire et de fumer entre le lever et le coucher du soleil chaque jour, pendant tout le mois lunaire de ramadan, qui dure une trentaine de jours.
+
+            Une simple gorgée d'eau ou une bouffée de cigarette peut suffire à invalider le jeûne.
+            
+            Les relations sexuelles sont aussi interdites pendant le jeûne quotidien, et on encourage les musulmans à éviter les commérages et les querelles.
+            
+            Pour se préparer au jeûne, les musulmans se réveillent en pleine nuit pour prendre un repas — le « suhoor » — avant l'aube. Il s'agit souvent de légumes, de fruits, de thé, de yogourt, de dattes et d'aliments énergétiques comme les fèves et les lentilles.
+            
+            Dans plusieurs villes du monde musulman, des bénévoles réveillent les fidèles pour le « suhoor » en marchant dans les rues avant l'aube, en chantant et en jouant du tambour</p>
+        </div>
+        <div class="box">
+           <h3 onclick="toggleBox(3)">Comment les musulmans rompent-ils le jeûne ?</h3>
+           <p class="num3">Les musulmans rompent traditionnellement leur jeûne comme l'a fait le prophète Mahomet il y a environ 1400 ans, avec une gorgée d'eau et quelques dattes au coucher du soleil. Après les prières de fin de journée, famille et amis participent à un grand banquet appelé l'« iftar ».
+
+            L'iftar est aussi bien un événement social qu'une aventure gastronomique. Dans plusieurs pays du monde arabe, le jus d'abricot est un incontournable. Dans le sud de l'Asie et en Turquie, les boissons à base de yogourt sont très populaires.
+            
+            Chaque nuit pendant le ramadan, les mosquées et les organisations caritatives installent des tentes et des tables pour offrir des repas d'« iftar » gratuits au public.</p>
+        </div>
+        <div class="box">
+           <h3 onclick="toggleBox(4)">Les musulmans peuvent-ils être exemptés du jeûne ?</h3>
+           <p class="num4">Les enfants, les gens malades et les personnes âgées en sont exemptés, en plus des femmes enceintes, qui allaitent ou qui ont leurs règles. Les voyageurs, y compris les athlètes qui compétitionnent loin de chez eux, n'ont pas non plus à respecter le jeûne.
+
+            Les musulmans de l'hémisphère nord devront composer cette année avec des journées de jeûne particulièrement longues, puisque le soleil ne se couchera pas avant 21 h dans des villes comme Londres.
+            
+            Les responsables musulmans conseillent à ceux qui habitent encore plus au nord de respecter l'horaire de la ville musulmane ou du pays musulman le plus proche.</p>
+        </div>
+        <div class="box">
+           <h3 onclick="toggleBox(5)">Comment les pays musulmans observent-ils le jeûne ?</h3>
+           <p class="num5">Plusieurs pays musulmans limitent la vente d'alcool pendant le ramadan. Dans certains pays, ceux qui mangent en public en plein jour peuvent écoper d'une amende ou d'une peine de prison. Le respect des règles du ramadan par les non-musulmans est un choix personnel et n'intéresse généralement pas la police.
+
+            Aux Émirats arabes unis, par exemple, où on retrouve un grand nombre d'Occidentaux à Dubaï et à Abou Dhabi, les restaurants utilisent des rideaux pour cacher leurs clients qui mangent pendant le jour. En Arabie saoudite, les restaurants ferment simplement leurs portes pendant le jour.</p>
+        </div>
+        <div class="box">
+            <h3 onclick="toggleBox(6)">Quelles sont les principales traditions du ramadan ?</h3>
+            <p class="num5">Une fois le début du mois sacré du ramadan déclaré, les musulmans s'échangent des salutations comme « ramadan karim » et « ramadan moubarak » par textos, par téléphone et par courriel.
+
+                Un autre fait saillant du ramadan est la prière nocturne à la mosquée, ce que les sunnites appellent « taraweeh ».
+                
+                Les Égyptiens ont la tradition de la « fanoos », une lanterne du ramadan qui est souvent placée au centre de la table de l'iftar ou accrochée à la fenêtre ou au balcon. Dans les pays du golfe Persique, les familles nanties organisent des « majlises » et ouvrent leurs portes à tous les passants pendant la nuit pour leur offrir de la nourriture, du thé et du café, et pour discuter avec eux.
+                
+                Les tentes du ramadan sont de plus en plus courantes dans les hôtels de luxe qui y servent des repas somptueux entre le coucher et le lever du soleil. Si le ramadan est bon pour les affaires des détaillants du Moyen-Orient et de l'Asie du Sud, de plus en plus de croyants dénoncent l'aspect commercial du mois sacré.
+                
+                Les leaders religieux déplorent aussi la prolifération des émissions télévisées de soirée conçues spécialement pour le ramadan. Au Pakistan, des jeux télévisés offrent en direct des prix offerts par leurs commanditaires. Dans plusieurs pays du monde arabe, des téléséries qui durent tout le mois récoltent des millions de dollars en recettes publicitaires.</p>
+         </div>
+         <div class="box">
+            <h3 onclick="toggleBox(7)">Comment les musulmans célèbrent-ils la fin du ramadan ?</h3>
+            <p class="num5">
+                La fin du ramadan est marquée par des prières intenses pendant la « Laylat al-Qadr » ou « Nuit du Destin ». C'est pendant cette nuit, qui survient pendant les dix dernières nuits du mois de ramadan, que les fidèles croient que Dieu a envoyé l'archange Gabriel révéler les premières lignes du Coran au prophète Mahomet.
+
+                 Après cette nuit de prières, la fin du ramadan fait l'objet d'une fête de trois jours, l'Aïd el-Fitr. 
+                 Les enfants reçoivent souvent de nouveaux vêtements, des cadeaux et de l'argent. Les musulmans participent 
+                 à des prières en début de journée au lendemain de la fin du ramadan. Les familles passent habituellement la
+                  journée au parc, mangeant sous le soleil pour la première fois depuis un mois.
+             </p>
+         </div>
+     </div>
+     </div>
+     </section>
+     <script>
+         function toggleBox(index) {
+    // Récupérer toutes les boîtes
+    var boxes = document.querySelectorAll('.faq .box');
+    
+    // Retirer la classe 'active' de toutes les boîtes
+    boxes.forEach(function(box) {
+      box.classList.remove('active');
+    });
+
+    // Ajouter la classe 'active' à la boîte correspondante
+    boxes[index - 1].classList.add('active');
+  }
+
+
+  
+
+     </script>
+</body>
+</html>
